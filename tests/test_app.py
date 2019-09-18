@@ -79,7 +79,7 @@ class FlaskrTestCase(unittest.TestCase):
     def test_delete_message(self):
         """Ensure the messages are being deleted"""
         rv = self.app.get('/delete/1')
-        data = json.loads(rv.data)
+        data = json.loads(rv.data.decode('utf-8'))
         self.assertEqual(data['status'], 1)
 
 
