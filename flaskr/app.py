@@ -9,7 +9,7 @@ from flask_sqlalchemy import SQLAlchemy
 basedir = os.path.abspath(os.path.dirname(__file__))
 
 # configuration
-DATABASE = 'flaskr.db'
+DATABASE = os.path.join('flaskr', 'flaskr.db')
 DEBUG = True
 SECRET_KEY = 'my_precious'
 USERNAME = 'admin'
