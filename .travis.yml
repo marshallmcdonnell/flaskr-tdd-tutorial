@@ -8,7 +8,8 @@ python:
   - "nightly"  # nightly build
 # command to install dependencies
 install:
-  - pip install pytest flask
+  - pip install pipenv
+  - pipenv install --dev
 # command to run tests
 script:
   - pytest
