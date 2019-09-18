@@ -1,7 +1,7 @@
 # create_db.py
 
 
-from flaskr.app import db
+from flaskr import db
 from flaskr.models import Flaskr
 
 
